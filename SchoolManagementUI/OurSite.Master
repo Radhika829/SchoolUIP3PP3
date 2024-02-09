@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OurSite.master.cs" Inherits="SchoolManagementUI.OurSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheet/OurStyleSheet.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class ="topPanel"> <h2> SchoolDatabase</h2></div>
+             <div class ="leftPanel"> <h2> RainbowSchool</h2></div>
+             <div class ="centrePanel"> <h2>&nbsp;</h2>
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+                 <p>&nbsp;</p>
+            </div>
+            <div class ="rightPanel"> <h2> Index</h2>
+                <table class="auto-style1">
+                    <tr>
+                        <td>
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Students.aspx">Students</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="Subjects.aspx">Subjects</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="Classes.aspx">Classes</asp:HyperLink>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
